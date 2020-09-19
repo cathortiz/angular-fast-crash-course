@@ -7,8 +7,8 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
-  firstName = 'Edwin';
+  title = 'The New App';
+  firstName = 'Catherin';
   lastName: string;
   status: boolean;
   posts: object[];
@@ -18,8 +18,8 @@ export class AppComponent {
   };
 
   constructor() {
-    this.lastName = 'Diaz';
-    this.getUserStatus();
+    this.lastName = 'Ortiz';
+    //this.getUserStatus();
     this.posts = [
       {title: 'Post 1'},
       {title: 'Post 2'},
@@ -31,25 +31,20 @@ export class AppComponent {
   displayFirstName() {
     return this.firstName;
   }
-  getUserStatus() {
-    this.status = false;
+  activatePerson() {
+    this.status = true;
   }
-  greetPerson() {
-    // alert('HI');
 
-    console.log('HI');
+  deactivatePerson() {
+     this.status = false;
   }
 
   mousingOver() {
-
     console.log('we just moused over');
-
   }
 
   keyDowning() {
-
     console.log('You just key down');
-
   }
 
 
