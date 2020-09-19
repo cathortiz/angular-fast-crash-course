@@ -18,7 +18,6 @@ export class AppComponent {
   };
 
   constructor() {
-    console.log('constructor.....');
     this.lastName = 'Diaz';
     this.getUserStatus();
     this.posts = [
